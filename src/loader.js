@@ -38,7 +38,7 @@ function parseReactSVGElement(source) {
  */
 function inlineSVG(source) {
     return source.replace(/'/g, '"')
-        .replace(/fill="(.+?)"/gi, '')
+        // .replace(/fill="(.+?)"/gi, '')
         .replace(/<!--[\s\S]*?-->/g, ' ')
         .replace(/<\?xml.*?>/, '')
         .replace(/id="([a-z0-9\-_]+)"/gi, '')
